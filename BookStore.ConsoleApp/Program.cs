@@ -1,17 +1,11 @@
-﻿/* 
-class
+﻿using static System.Console;
 
-    constructor
-    
-    backing field
-    property
-    method
-    access modifier
+var blueBookStore = new BookStore(name: "Blue", address: "shiraz, ghoddousi gharbi");
 
-    create object from class by constructor
-*/
+WriteLine($"bookstore {blueBookStore.Name} opened!");
 
-BookStore blueBookStore = new BookStore("Blue");
-Console.WriteLine($"bookstore {blueBookStore.Name} opened!");
-blueBookStore.Consult("mohammad");
+WriteLine(blueBookStore.Consult(customer: "mohammad"));
 
+var redBookStore = new OnlineBookStore("Red", "shiraz", "www.redbook.ir");
+
+WriteLine(redBookStore.LendBook("unsherli", "ali"));
