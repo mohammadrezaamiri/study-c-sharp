@@ -7,9 +7,4 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
-    <ItemGroup>
-      <ProjectReference Include="..\Games.ConsoleApp\Games.ConsoleApp.csproj" />
-      <ProjectReference Include="..\GuessNumberGames.ConsoleApp\GuessNumberGames.ConsoleApp.csproj" />
-    </ItemGroup>
-
 </Project>

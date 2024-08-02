@@ -1,6 +1,4 @@
-﻿namespace Games.ConsoleApp;
-
-public abstract class Game
+﻿public abstract class Game
 {
     protected abstract string Name { get; set; }
 

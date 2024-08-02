@@ -1,8 +1,4 @@
-﻿using Games.ConsoleApp;
-
-namespace Gamenet.ConsoleApp;
-
-public class Gamenet
+﻿public class Gamenet
 {
     private Game _game;
     

@@ -5,13 +5,11 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.ConsoleApp", "BookStore.ConsoleApp\BookStore.ConsoleApp.csproj", "{DCDFC9A5-CA26-44F6-8A35-7E48C91E1767}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vehicle.ConsoleApp", "Vehicle.ConsoleApp\Vehicle.ConsoleApp.csproj", "{B23056EE-BCFF-4F05-AF62-664837C57214}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamenets.ConsoleApp", "Gamenets.ConsoleApp\Gamenets.ConsoleApp.csproj", "{E9A7F3ED-4C25-4ABE-9DB3-9A8A83AA1348}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Games.ConsoleApp", "Games.ConsoleApp\Games.ConsoleApp.csproj", "{062D76FD-71FD-440B-A4C2-34E43E39FF79}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Players.ConsoleApp", "Players.ConsoleApp\Players.ConsoleApp.csproj", "{D82B61FA-73B7-4042-B8C5-8FE882F10EBF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessNumberGames.ConsoleApp", "GuessNumberGames.ConsoleApp\GuessNumberGames.ConsoleApp.csproj", "{955A3C15-4E56-40AB-A15D-8671CA9FDDA9}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamenet.ConsoleApp", "Gamenet.ConsoleApp\Gamenet.ConsoleApp.csproj", "{E9A7F3ED-4C25-4ABE-9DB3-9A8A83AA1348}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculators.ConsoleApp", "Calculators.ConsoleApp\Calculators.ConsoleApp.csproj", "{59BC37D6-1C02-412B-A219-0248F554755C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,10 +24,6 @@ Global
 		{DCDFC9A5-CA26-44F6-8A35-7E48C91E1767}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCDFC9A5-CA26-44F6-8A35-7E48C91E1767}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCDFC9A5-CA26-44F6-8A35-7E48C91E1767}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B23056EE-BCFF-4F05-AF62-664837C57214}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B23056EE-BCFF-4F05-AF62-664837C57214}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B23056EE-BCFF-4F05-AF62-664837C57214}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B23056EE-BCFF-4F05-AF62-664837C57214}.Release|Any CPU.Build.0 = Release|Any CPU
 		{062D76FD-71FD-440B-A4C2-34E43E39FF79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{062D76FD-71FD-440B-A4C2-34E43E39FF79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{062D76FD-71FD-440B-A4C2-34E43E39FF79}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -42,5 +36,13 @@ Global
 		{E9A7F3ED-4C25-4ABE-9DB3-9A8A83AA1348}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9A7F3ED-4C25-4ABE-9DB3-9A8A83AA1348}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9A7F3ED-4C25-4ABE-9DB3-9A8A83AA1348}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D82B61FA-73B7-4042-B8C5-8FE882F10EBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D82B61FA-73B7-4042-B8C5-8FE882F10EBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D82B61FA-73B7-4042-B8C5-8FE882F10EBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D82B61FA-73B7-4042-B8C5-8FE882F10EBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59BC37D6-1C02-412B-A219-0248F554755C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59BC37D6-1C02-412B-A219-0248F554755C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59BC37D6-1C02-412B-A219-0248F554755C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59BC37D6-1C02-412B-A219-0248F554755C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
