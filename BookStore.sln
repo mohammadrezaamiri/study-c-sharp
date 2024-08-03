@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.ConsoleApp", "BookStore.ConsoleApp\BookStore.ConsoleApp.csproj", "{DCDFC9A5-CA26-44F6-8A35-7E48C91E1767}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamenets.ConsoleApp", "Gamenets.ConsoleApp\Gamenets.ConsoleApp.csproj", "{E9A7F3ED-4C25-4ABE-9DB3-9A8A83AA1348}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameClubs.ConsoleApp", "GameClubs.ConsoleApp\GameClubs.ConsoleApp.csproj", "{E9A7F3ED-4C25-4ABE-9DB3-9A8A83AA1348}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Players.ConsoleApp", "Players.ConsoleApp\Players.ConsoleApp.csproj", "{D82B61FA-73B7-4042-B8C5-8FE882F10EBF}"
 EndProject
