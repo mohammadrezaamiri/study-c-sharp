@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EducationSystems.Models", "EducationSystems.Models\EducationSystems.Models.csproj", "{97B804C9-973C-4D06-824C-BA9FE1B8A1FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EducationSystems.ConsoleApp", "EducationSystems.ConsoleApp\EducationSystems.ConsoleApp.csproj", "{F24DBEE4-FD8F-4406-A334-788EEBB5217E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97B804C9-973C-4D06-824C-BA9FE1B8A1FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97B804C9-973C-4D06-824C-BA9FE1B8A1FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97B804C9-973C-4D06-824C-BA9FE1B8A1FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97B804C9-973C-4D06-824C-BA9FE1B8A1FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F24DBEE4-FD8F-4406-A334-788EEBB5217E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F24DBEE4-FD8F-4406-A334-788EEBB5217E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F24DBEE4-FD8F-4406-A334-788EEBB5217E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F24DBEE4-FD8F-4406-A334-788EEBB5217E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
