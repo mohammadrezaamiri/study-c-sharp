@@ -10,6 +10,7 @@ public class GuessNumberGame : Game
         Description = description;
         _number = GenerateRandomNumber();
     }
+
     public override string Name { get; }
     public override string Description { get; }
 

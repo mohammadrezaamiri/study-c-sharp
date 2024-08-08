@@ -2,10 +2,13 @@
 
 namespace GameClubs.ConsoleApp;
 
-public class GameClub(params Game[] games)
+public class GameClub
 {
+    public GameClub(params Game[] games) => AddGames(games);
     public void ComeIn(string player) => ChooseMenu(player);
-
+    public void AddGames(params Game[] games) => _games.AddRange(games);
+ 
+    private readonly List<Game> _games = new ();
     private void ChooseMenu(string player)
     {
         bool playAgain = true;
@@ -16,7 +19,6 @@ public class GameClub(params Game[] games)
             playAgain = DoOrder(player, choice, playAgain);   
         }
     }
-
     private bool DoOrder(string player, int choice, bool playAgain)
     {
         switch (choice)
@@ -42,14 +44,14 @@ public class GameClub(params Game[] games)
     }
 
     private void ShowGameDescription(int gameId)
-        => WriteLine($"the {games[gameId-1].Name} description :" +
-                             $" \n {games[gameId-1].Description} \n");
+        => WriteLine($"the {_games[gameId-1].Name} description :" +
+                             $" \n {_games[gameId-1].Description} \n");
 
     private void PlayGame(string player, int gameId)
     {
         if (GameNotFound(gameId)) return;
 
-        var game = games[gameId-1];
+        var game = _games[gameId-1];
 
         WriteLine($"Welcome dear {player}. Enjoy the {game.Name}.");
 
@@ -61,15 +63,15 @@ public class GameClub(params Game[] games)
         if (GamesAreEmpty()) return;
 
         string result = "Which Game you mean : \n";
-        for (int i = 1; i <= games.Length; i++)
-            result += $"[{i}]. {games[i-1].Name} \n";
+        for (int i = 1; i <= _games.Count; i++)
+            result += $"[{i}]. {_games[i-1].Name} \n";
         
         Write($"{result} \n dear {player} Choice : ");
     }
 
     private bool GamesAreEmpty()
     {
-        if (games.Length != 0) return false;
+        if (_games.Count != 0) return false;
 
         WriteLine("game club not have any game!");
         return true;
@@ -77,7 +79,7 @@ public class GameClub(params Game[] games)
 
     private bool GameNotFound(int gameId)
     {
-        if (gameId >= 1 && gameId <= games.Length) return false;
+        if (gameId >= 1 && gameId <= _games.Count) return false;
         
         WriteLine("game not found");
         return true;
