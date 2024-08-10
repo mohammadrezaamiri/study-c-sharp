@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Players.ConsoleApp", "Playe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculators.ConsoleApp", "Calculators.ConsoleApp\Calculators.ConsoleApp.csproj", "{59BC37D6-1C02-412B-A219-0248F554755C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zoo.ConsoleApp", "Zoo.ConsoleApp\Zoo.ConsoleApp.csproj", "{9D76A4BC-C20A-40BD-AB94-9971C494A97C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +46,9 @@ Global
 		{59BC37D6-1C02-412B-A219-0248F554755C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59BC37D6-1C02-412B-A219-0248F554755C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59BC37D6-1C02-412B-A219-0248F554755C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D76A4BC-C20A-40BD-AB94-9971C494A97C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D76A4BC-C20A-40BD-AB94-9971C494A97C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D76A4BC-C20A-40BD-AB94-9971C494A97C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D76A4BC-C20A-40BD-AB94-9971C494A97C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

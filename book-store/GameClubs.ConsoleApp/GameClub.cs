@@ -1,10 +1,15 @@
-﻿using static System.Console;
-
-namespace GameClubs.ConsoleApp;
+﻿namespace GameClubs.ConsoleApp;
 
 public class GameClub
 {
-    public GameClub(params Game[] games) => AddGames(games);
+    private readonly IGameClubIO _io;
+
+    public GameClub(IGameClubIO io, params Game[] games)
+    {
+        _io = io;
+        AddGames(games);
+    }
+
     public void ComeIn(string player) => ChooseMenu(player);
     public void AddGames(params Game[] games) => _games.AddRange(games);
  
@@ -36,7 +41,7 @@ public class GameClub
                 ShowGameDescription(gameId);
             } break;
             case 3 : playAgain = false; break;
-            default : WriteLine("Wrong Choice. Try again !");
+            default : _io.Write("Wrong Choice. Try again !");
                 break;
         }
 
@@ -44,7 +49,7 @@ public class GameClub
     }
 
     private void ShowGameDescription(int gameId)
-        => WriteLine($"the {_games[gameId-1].Name} description :" +
+        => _io.Write($"the {_games[gameId-1].Name} description :" +
                              $" \n {_games[gameId-1].Description} \n");
 
     private void PlayGame(string player, int gameId)
@@ -53,7 +58,7 @@ public class GameClub
 
         var game = _games[gameId-1];
 
-        WriteLine($"Welcome dear {player}. Enjoy the {game.Name}.");
+        _io.Write($"Welcome dear {player}. Enjoy the {game.Name}.");
 
         game.Play();
     }
@@ -66,14 +71,14 @@ public class GameClub
         for (int i = 1; i <= _games.Count; i++)
             result += $"[{i}]. {_games[i-1].Name} \n";
         
-        Write($"{result} \n dear {player} Choice : ");
+        _io.Write($"{result} \n dear {player} Choice : ", false);
     }
 
     private bool GamesAreEmpty()
     {
         if (_games.Count != 0) return false;
 
-        WriteLine("game club not have any game!");
+        _io.Write("game club not have any game!");
         return true;
     }
 
@@ -81,27 +86,27 @@ public class GameClub
     {
         if (gameId >= 1 && gameId <= _games.Count) return false;
         
-        WriteLine("game not found");
+        _io.Write("game not found");
         return true;
     }
 
-    private static int GetChoice()
+    private int GetChoice()
     {
         int choice = 0;
         bool isChoiceValid = false;
         while (isChoiceValid == false)
         {
-            isChoiceValid = int.TryParse(ReadLine()!, out int userInput);
+            isChoiceValid = int.TryParse(_io.ReadLine()!, out int userInput);
             choice = userInput;
         }
-        Clear();
+        _io.Clear();
         return choice;
     }
     
     
     private void ShowMenu(string player)
     {
-        Write(@$"
+        _io.Write(@$"
 Welcome {player}. What can i do for you ?
 [1]. Play game
 [2]. Show game description
