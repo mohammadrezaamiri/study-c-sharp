@@ -1,3 +1,5 @@
+using static System.Console;
+
 namespace Players.ConsoleApp;
 
 public class AdvancePlayer : Player

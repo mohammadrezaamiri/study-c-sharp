@@ -10,9 +10,9 @@ public class Player
 
     // Auto-Implemented properties
     public string Name { get; set; }
-    
-    
-    
+
+    public List<string> InterestedGames { get; } = [];
+
     // simple properties
     private string bestFavoriteGame; // backing field
     public string BestFavoriteGame { get => bestFavoriteGame; set => bestFavoriteGame = value; }

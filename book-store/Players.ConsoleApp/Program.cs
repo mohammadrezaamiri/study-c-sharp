@@ -1,6 +1,12 @@
 ﻿using Players.ConsoleApp;
 
-var player = new Player(DateTime.Now.AddYears(-10));
+var trainGeneric = new TrainGeneric();
+trainGeneric.TrainPrinter();
 
-player.TestProtectedInternal();
-// player.TestPrivateProtected();
+
+var cat = new Cat();
+var treatment = new Treatment<Cat>();
+treatment.Treat(cat);
+
+// var player = new Player(DateTime.Now);
+// var treatment2 = new Treatment<Player>(player);
